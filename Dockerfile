@@ -1,7 +1,9 @@
 # set base image (host OS)
 FROM python:3.9-buster
 
+# Maintainer Information
 LABEL maintainer="Shahnawaz Hossan <s.pabon93@gmail.com>"
+LABEL license="MIT"
 
 # set the working directory in the container
 WORKDIR /app
