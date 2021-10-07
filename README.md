@@ -10,3 +10,17 @@
       <img src="https://img.shields.io/badge/License-MIT-2c3e50?style=for-the-badge" alt="Logo" />
     </a>
 </div>
+
+## 📁 Project Structure
+
+```text
+📂 fastapi-boilerplate
+|_📁 .git
+|_📄 .gitignore
+|_📄 .dockerignore
+|_📄 docker-compose.yml
+|_📄 Dockerfile
+|_📄 LICENSE
+|_📄 README.md
+|_📄 requirements.txt
+```

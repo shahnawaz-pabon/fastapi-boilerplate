@@ -17,6 +17,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # copy project
 COPY . .
 
+# expose the port for being accessed by another container
+EXPOSE 8002
+
 # Produce an output when container runs
 ENV name Shahnawaz Hossan
 ENTRYPOINT ["/bin/bash", "-c", "echo Hello, $name"]
