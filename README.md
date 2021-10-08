@@ -15,6 +15,8 @@
 
 ```text
 📂 fastapi-boilerplate
+|_📁 app
+  |_📄 main.py
 |_📁 .git
 |_📄 .gitignore
 |_📄 .dockerignore

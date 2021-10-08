@@ -5,6 +5,11 @@ FROM python:3.9-buster
 LABEL maintainer="Shahnawaz Hossan <s.pabon93@gmail.com>"
 LABEL license="MIT"
 
+    # Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1 \
+    # Keeps Python from generating .pyc files in the container
+    PYTHONDONTWRITEBYTECODE=1
+
 # set the working directory in the container
 WORKDIR /app
 
