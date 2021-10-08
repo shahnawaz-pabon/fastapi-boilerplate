@@ -15,6 +15,15 @@
 
 ```text
 📂 fastapi-boilerplate
+|_📁 app
+  |_📁 api
+    |_📁 api_v1
+      |_📁 endpoints
+        |_📄 examples.py
+    |_📄 api.py
+  |_📁 core
+    |_📄 config.py
+  |_📄 main.py
 |_📁 .git
 |_📄 .gitignore
 |_📄 .dockerignore
@@ -23,4 +32,21 @@
 |_📄 LICENSE
 |_📄 README.md
 |_📄 requirements.txt
+```
+
+## 🔨 Project Setup and Run
+
+### 👉 By using virtual environment
+
+```bash
+$ python3.8 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ uvicorn app.main:app --reload --host 0.0.0.0
+```
+
+After installing new module using pip, don't forget to update your `requirements.txt` file:
+
+```bash
+$ pip freeze > requirements.txt
 ```
