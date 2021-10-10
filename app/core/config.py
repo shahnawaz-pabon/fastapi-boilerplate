@@ -1,10 +1,10 @@
-import secrets
-from typing import Any, Dict, List, Optional, Union
+from typing import List
 
-from pydantic import AnyHttpUrl, BaseSettings, validator
+from pydantic import AnyHttpUrl, BaseSettings
 from starlette.config import Config
 
 config = Config(".env")
+
 
 class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
@@ -16,5 +16,6 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
 
     PROJECT_NAME: str = config("PROJECT_NAME", default="FastAPI boilerplate")
+
 
 settings = Settings()
