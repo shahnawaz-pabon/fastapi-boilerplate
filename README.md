@@ -15,23 +15,27 @@
 
 ```text
 📂 fastapi-boilerplate
-|_📁 app
-  |_📁 api
-    |_📁 api_v1
-      |_📁 endpoints
-        |_📄 examples.py
-    |_📄 api.py
-  |_📁 core
-    |_📄 config.py
-  |_📄 main.py
-|_📁 .git
+|_📁 {{cookiecutter.project_name}}
+  |_📁 app
+    |_📁 api
+      |_📁 api_v1
+        |_📁 endpoints
+          |_📄 examples.py
+      |_📄 api.py
+    |_📁 core
+      |_📄 config.py
+    |_📄 main.py
+  |_📁 .git
+  |_📄 .gitignore
+  |_📄 .dockerignore
+  |_📄 docker-compose.yml
+  |_📄 Dockerfile
+  |_📄 README.md
+  |_📄 requirements.txt
 |_📄 .gitignore
-|_📄 .dockerignore
-|_📄 docker-compose.yml
-|_📄 Dockerfile
+|_📄 cookiecutter.json
 |_📄 LICENSE
 |_📄 README.md
-|_📄 requirements.txt
 ```
 
 ## 🔨 Project Setup and Run
